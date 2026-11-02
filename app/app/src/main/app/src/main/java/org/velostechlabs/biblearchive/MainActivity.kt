@@ -1,6 +1,7 @@
 
 package org.velostechlabs.biblearchive
 
+import androidx.compose.material3.ExperimentalMaterial3Api
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,6 +24,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BibleArchiveApp() {
     var tab by remember { mutableIntStateOf(0) }
